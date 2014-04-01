@@ -1,0 +1,17 @@
+<?php
+
+//
+// https://support.loopia.se/wiki/Python
+//
+
+// Retrieve instance of the framework
+$f3=require('lib/base.php');
+
+// Initialize config
+$f3->config('app/config.ini');
+
+// Define routes
+$f3->config('app/routes.ini');
+
+// Execute application
+$f3->run();
