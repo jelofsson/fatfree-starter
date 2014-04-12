@@ -4,6 +4,14 @@
 class Controller {
 
 	protected $db;
+    
+	//! Instantiate class
+	function __construct() {
+		$app=Base::instance(); 
+		// Connect to the database
+		//$db=new DB\SQL('mysql:host=;port=;dbname=', '', ''); 
+		//$this->db=$db;
+	}
 
 	//! HTTP route pre-processor
 	function beforeroute($app) {
@@ -11,21 +19,13 @@ class Controller {
 	}
 
 	//! HTTP route post-processor
-	function afterroute($app) { 
-	
+	function afterroute($app) {
 		if( $app->get('apiCall') ){
 			// Api REST Call.
 		} else {
-			echo Template::instance()->render('layout.htm');
+            // Ordinary GET call.
+			//echo Template::instance()->render('layout.htm');
 		}
-	}
-
-	//! Instantiate class
-	function __construct() {
-		$app=Base::instance(); 
-		// Connect to the database
-		//$db=new DB\SQL('mysql:host=;port=;dbname=', '', ''); 
-		//$this->db=$db;
 	}
    
 }
