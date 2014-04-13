@@ -17,4 +17,6 @@
 
 #### Assets
 
-* Uploaded data
+* Uploaded data  
+
+*Thank goes out to [Alexander Ma](http://alex.ma/) for giving insights in routes & configuration.*
