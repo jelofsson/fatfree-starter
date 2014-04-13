@@ -13,10 +13,10 @@
 #### UI folder
 
 * Views
-* static content (css/js/images)
+* static content
 
 #### Assets
 
 * Uploaded data  
 
-*Thank goes out to [Alexander Ma](http://alex.ma/) for giving insights in routes & configuration.*
+*Thanks goes out to [Alexander Ma](http://alex.ma/) for giving insights in routes & configuration.*
