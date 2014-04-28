@@ -20,3 +20,4 @@ class REST extends Controller {
 		$app->set('widgets',array('main/index.htm' => '12')); 
 	}
 	
+}
